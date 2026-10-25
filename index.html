@@ -1,1 +1,95 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <title>Мой шкаф — Между строк</title>
+
+    <link rel="stylesheet" href="./css/base.css" />
+    <script src="./js/shelf.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="./index.html">Между строк</a>
+
+        <nav class="navigation" aria-label="Основная навигация">
+          <a
+            class="navigation__link navigation__link--active"
+            href="./index.html"
+            aria-current="page"
+          >
+            Мой шкаф
+          </a>
+
+          <a class="navigation__link" href="./reader.html"> Читалка </a>
+
+          <a class="navigation__link" href="./diary.html"> Дневник </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main container">
+      <section class="library" aria-labelledby="library-title">
+        <div class="library__heading">
+          <div>
+            <p class="eyebrow">Моя личная библиотека</p>
+            <h1 class="library__title" id="library-title">Мой книжный шкаф</h1>
+          </div>
+
+          <button class="button" type="button" id="add-book-button">
+            + Добавить книгу
+          </button>
+        </div>
+
+        <form class="search" role="search">
+          <label class="search__label" for="book-search">
+            Поиск по библиотеке
+          </label>
+
+          <input
+            class="search__input"
+            id="book-search"
+            name="query"
+            type="search"
+            placeholder="Название книги или автор"
+          />
+        </form>
+
+        <div class="bookcase">
+          <div class="shelf">
+            <ul class="shelf__books" aria-label="Первая полка">
+              <li class="shelf__item">
+                <button
+                  class="book"
+                  type="button"
+                  aria-label="Гордость и предубеждение, Джейн Остин"
+                >
+                  <span class="book__author">Джейн Остин</span>
+                  <span class="book__title">Гордость и предубеждение</span>
+                  <span class="book__ornament" aria-hidden="true">✦</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="shelf">
+            <ul class="shelf__books" aria-label="Вторая полка"></ul>
+          </div>
+
+          <div class="shelf">
+            <ul class="shelf__books" aria-label="Третья полка"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Между строк — место для книг и твоих мыслей.</p>
+      </div>
+    </footer>
+  </body>
+</html>
