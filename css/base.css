@@ -334,6 +334,38 @@ button {
   }
 }
 
+/* Варианты корешков */
+
+.book--green {
+  height: 168px;
+
+  background: linear-gradient(
+    to right,
+    #1d332c,
+    #3c594a 18%,
+    #30483c 75%,
+    #192b24
+  );
+}
+
+.book--cream {
+  height: 176px;
+
+  background: linear-gradient(
+    to right,
+    #c4aa88,
+    #efdfc5 18%,
+    #ddc7a7 75%,
+    #b99a76
+  );
+
+  color: #51372b;
+}
+
+.book--cream:focus-visible {
+  outline-color: var(--color-accent);
+}
+
 /* Подвал */
 
 .footer {
